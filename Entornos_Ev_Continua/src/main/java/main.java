@@ -288,7 +288,7 @@ public class main {
             listado.verInfo();
     }
     /**
-     * Función que me permote ver el listado de productos que
+     * Función que me permite ver el listado de productos que
      * se encuentran en mi catálogo.
      */
     static void listarProductos(){

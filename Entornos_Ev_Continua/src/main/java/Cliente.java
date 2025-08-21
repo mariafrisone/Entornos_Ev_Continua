@@ -15,11 +15,28 @@ public class Cliente {
         this.mail = mail;
     }
 
+    /**
+     * Función para obtener el nombre del cliente
+     * @return - Nombre cliente
+     */
     public String getNombre() {return nombre;}
 
+    /**
+     * Función para obtener el DNI del cliente
+     * @return - DNI cliente
+     */
     public String getDni() {return dni;}
 
+    /**
+     * Función para obtener el teléfono del cliente
+     * @return - Teléfono del cliente
+     */
     public String getTelefono() {return telefono;}
+
+    /**
+     * Función para obtener el email del cliente
+     * @return - Email del cliente
+     */
 
     public String getMail() {return mail;}
 

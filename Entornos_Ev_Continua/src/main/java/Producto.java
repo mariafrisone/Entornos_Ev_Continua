@@ -14,21 +14,42 @@ public class Producto {
         this.precio = precio;
     }
 
+    /**
+     * Función para obtener el ID de un producto
+     * @return - ID del producto
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * Función para obtener el modelo del producto
+     * @return - Modelo del producto
+     */
     public String getModelo() {
         return modelo;
     }
 
+    /**
+     * Función para obtener el material del producto
+     * @return - Material del producto
+     */
     public String getMaterial() {
         return material;
     }
 
+    /**
+     * Función para obtener el color de un producto
+     * @return - Color producto
+     */
     public String getColor() {
         return color;
     }
+
+    /**
+     * Función para obtener el precio de un producto
+     * @return - Precio
+     */
 
     public double getPrecio() {
         return precio;
