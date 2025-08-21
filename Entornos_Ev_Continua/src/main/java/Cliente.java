@@ -31,6 +31,11 @@ public class Cliente {
 
     public void setMail(String mail) {this.mail = mail;}
 
+    /**
+     * Función que me imprime la información de cada cliente que se encuentra cargado
+     * en mi base.
+     */
+
     public void verInfo (){
         System.out.println("\n Nombre: " + this.nombre + "\n DNI: " + this.dni + "\n Teléfono: " + this.telefono +
                 "\n Mail: " + this.mail);

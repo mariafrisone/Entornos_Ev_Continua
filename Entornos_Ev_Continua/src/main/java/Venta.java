@@ -32,6 +32,10 @@ public class Venta {
         }
         System.out.println("Total: " + this.total + "€");
     }
+    /**
+     * Función que me permite ver la suma total de las compras de los clientes.
+     * @return - Me devuelve la suma total de las compras
+     */
 
     private double calcularTotal(){
         double sumaTotal = 0;

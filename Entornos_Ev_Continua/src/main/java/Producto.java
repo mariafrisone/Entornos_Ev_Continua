@@ -34,6 +34,11 @@ public class Producto {
         return precio;
     }
 
+    /**
+     * Función que me imprime el detalle de los productos que se encuentran
+     * cargados en mi base.
+     */
+
     public void verDetalle(){
         System.out.println("\n ID mueble: " + this.id + "\n Modelo: " + this.modelo + "\n Material: " + this.material +
                 "\n Color: " + this.color + "\n Precio: " + this.precio);

@@ -1,3 +1,9 @@
+/**
+ * Sistema gestor de una empresa comercializadora de mobiliario
+ * @author Maria Marta Frisone
+ * @version 1.0.0
+ */
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -12,8 +18,11 @@ public class main {
     static HashMap<String, Cliente> mapaClientes = new HashMap<>();
     static HashMap<String, Producto> mapaProductos = new HashMap<>();
 
+    /**
+     * Menú principal de opciones a imprimir por consola
+     * @param args  - String Menú
+     */
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int opcion;
         do{
@@ -37,6 +46,12 @@ public class main {
             }
         }while (opcion != 5);
     }
+    /**
+     * Función que permite construir el menú de los clientes y sus respectivas
+     * acciones, como dar de alta, eliminar, modificar datos, búsqueda por DNI
+     * y listar a todos los clientes que formen parte de la base de datos.
+     * @param scanner - Para imprimir en consola
+     */
     static void gestionarClientes(Scanner scanner) {
         int op;
         do {
@@ -132,6 +147,12 @@ public class main {
             }
         }while (op != 6);
     }
+    /**
+     * Función que permite construir el menú de los productos y sus respectivas
+     * acciones como dar de alta un producto, ver el listado de los que ya están
+     * cargados o buscarlos por su ID.
+     * @param scanner - Para imprimir en consola
+     */
     static void gestionarProductos(Scanner scanner) {
         int op;
         do {
@@ -200,7 +221,10 @@ public class main {
             }
         } while (op != 4);
     }
-
+    /**
+     *Función que permite crear una nueva venta.
+     * @param scanner - Para imprimir en consola.
+     */
     static void realizarVentas(Scanner scanner) {
 
         mostrarClientes();
@@ -246,15 +270,27 @@ public class main {
             System.out.println("\n Venta cancelada, no se añadieron productos");
         }
     }
+
+    /**
+     * Función que me permite ver el listado de ventas realizadas
+     * @param scanner - Para imprimir por consola
+     */
     static void mostrarVentas(Scanner scanner){
         for (Venta listado : ventas)
             listado.listadoVentas();
-
     }
+    /**
+     * Función que me permite ver el listado de clientes cargados
+     * en mi base.
+     */
     static void mostrarClientes() {
         for (Cliente listado : clientes)
             listado.verInfo();
     }
+    /**
+     * Función que me permote ver el listado de productos que
+     * se encuentran en mi catálogo.
+     */
     static void listarProductos(){
         for (Producto listado : productos)
             listado.verDetalle();
