@@ -46,6 +46,7 @@ public class main {
             }
         }while (opcion != 5);
     }
+
     /**
      * Función que permite construir el menú de los clientes y sus respectivas
      * acciones, como dar de alta, eliminar, modificar datos, búsqueda por DNI
